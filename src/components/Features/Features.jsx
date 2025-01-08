@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Button, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+} from "@chakra-ui/react";
+import supergas from "../../assets/supergas.png";
 
 const Features = () => {
   return (
@@ -7,7 +16,7 @@ const Features = () => {
       {/* Título principal */}
       <Box textAlign="center" mb={12}>
         <Image
-          src="../src/assets/supergas.png"
+          src={supergas}
           alt="Supergasbras logo"
           maxW={["300px", "500px", "700px"]} // Ajuste maior para corresponder ao exemplo
           mx="auto"
