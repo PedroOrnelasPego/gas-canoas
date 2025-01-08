@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Image,
-  Text,
-} from "@chakra-ui/react";
-import './About.scss';
+import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
+import "./About.scss";
+import entrega2 from "../../assets/entrega2.jpg";
+import canoasgas from "../../assets/canoasgas.png";
 
 const About = () => {
   return (
@@ -23,7 +18,7 @@ const About = () => {
           {/* Seção da Imagem */}
           <Box flex={["1", "1.2"]} textAlign="center" mb={[6, 0]}>
             <Image
-              src="../src/assets/entrega2.jpg" // Substitua pelo caminho real da imagem
+              src={entrega2} // Substitua pelo caminho real da imagem
               alt="Entregador com botijões"
               maxW={["100%", "100%", "500px"]} // Garante responsividade
               borderRadius="md"
@@ -34,7 +29,7 @@ const About = () => {
           {/* Seção de Texto */}
           <Box flex={["1", "2"]} textAlign={["center", "left"]}>
             <Image
-              src="../src/assets/canoasgas.png"
+              src={canoasgas}
               alt="Canoas Gás logo"
               maxW={["300px", "400px", "600px"]} // Ajuste progressivo
               mx={["auto", "0"]}

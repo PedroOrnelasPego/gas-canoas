@@ -1,6 +1,9 @@
 import React from "react";
 import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
 import "./Header.scss";
+import entregador from "../../assets/entregador.png";
+import supergas from "../../assets/supergas.png";
+import canoasgas from "../../assets/canoasgas.png";
 
 const Header = () => {
   return (
@@ -15,7 +18,7 @@ const Header = () => {
           {/* Seção da Imagem */}
           <Box flex="1" textAlign="center" mb={[4, 0]}>
             <Image
-              src="../src/assets/entregador.png" // Substitua pelo caminho real da imagem
+              src={entregador} // Substitua pelo caminho real da imagem
               alt="Entregador com botijão"
               maxW={["200px", "300px", "700px"]} // Ajuste progressivo para telas menores
               mx="auto"
@@ -32,14 +35,14 @@ const Header = () => {
               textAlign={["center", "left"]} // Centralizar texto em telas menores
             >
               <Image
-                src="../src/assets/supergas.png"
+                src={supergas}
                 alt="Supergasbras logo"
                 maxW={["300px", "500px", "700px"]} // Ajuste maior para corresponder ao exemplo
                 mx="auto"
                 mb={4}
               />
               <Image
-                src="../src/assets/canoasgas.png"
+                src={canoasgas}
                 alt="Canoas Gás logo"
                 maxW={["300px", "500px", "700px"]} // Ajuste maior para corresponder ao exemplo
                 mx="auto"
@@ -52,7 +55,7 @@ const Header = () => {
               color="white"
               borderRadius="2xl" // Bordas arredondadas
               p={[4, 6]} // Padding interno
-              mb={[4,20]}
+              mb={[4, 20]}
               textAlign="center" // Centraliza o texto
               maxW="600px" // Define largura máxima
               mx="auto" // Centraliza horizontalmente
