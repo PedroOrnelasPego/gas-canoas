@@ -1,12 +1,8 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import p13 from "../../assets/p13.png";
+import p20 from "../../assets/p20.jpg";
+import p45 from "../../assets/p45.png";
 
 const Products = () => {
   return (
@@ -29,7 +25,7 @@ const Products = () => {
         {/* Produto 1 */}
         <Box flex="1" textAlign="center">
           <Image
-            src="../src/assets/p13.png" // Caminho da imagem do produto
+            src={p13} // Caminho da imagem do produto
             alt="Gás P13"
             maxW="200px"
             mx="auto"
@@ -51,7 +47,7 @@ const Products = () => {
         {/* Produto 2 */}
         <Box flex="1" textAlign="center">
           <Image
-            src="../src/assets/p20.jpg" // Caminho da imagem do produto
+            src={p20} // Caminho da imagem do produto
             alt="Gás P20"
             maxW="200px"
             mx="auto"
@@ -61,9 +57,9 @@ const Products = () => {
             Gás P20
           </Text>
           <Text fontSize="md" color="teal.600">
-            Os cilindros de 20kg são utilizados em empilhadeiras à combustão
-            por gás. É o único gás permitido pela ANP como combustível para
-            veículos automotores.
+            Os cilindros de 20kg são utilizados em empilhadeiras à combustão por
+            gás. É o único gás permitido pela ANP como combustível para veículos
+            automotores.
           </Text>
           <Text fontSize="md" color="teal.600">
             São projetados para utilização na posição horizontal, já que todo o
@@ -75,7 +71,7 @@ const Products = () => {
         {/* Produto 3 */}
         <Box flex="1" textAlign="center">
           <Image
-            src="../src/assets/p45.png" // Caminho da imagem do produto
+            src={p45} // Caminho da imagem do produto
             alt="Gás P45"
             maxW="200px"
             mx="auto"
