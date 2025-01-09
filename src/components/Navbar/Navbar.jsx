@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Menu para telas grandes */}
         <HStack
           as="nav"
-          spacing={10}
+          spacing={6}
           display={{ base: "none", md: "flex" }}
         >
           <Link

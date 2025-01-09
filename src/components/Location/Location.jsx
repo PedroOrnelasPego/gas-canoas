@@ -36,7 +36,7 @@ const Location = () => {
               <Img
                 src={maps} // Substitua por uma imagem gerada do mapa
                 alt="Localização no Google Maps"
-                width={["280px","340px", "600px"]}
+                width={["290px", "380px", "480px", "340px", "600px"]}
                 maxW="600px"
                 borderRadius="8px"
                 cursor="pointer"

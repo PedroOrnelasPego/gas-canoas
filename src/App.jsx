@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Products from "./components/Products";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <div id="footer">
         <Footer />
       </div>
+      <WhatsAppButton />
     </>
   );
 }
