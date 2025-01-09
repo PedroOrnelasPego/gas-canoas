@@ -36,7 +36,7 @@ const Location = () => {
               <Img
                 src={maps} // Substitua por uma imagem gerada do mapa
                 alt="Localização no Google Maps"
-                width={["340px", "600px"]}
+                width={["280px","340px", "600px"]}
                 maxW="600px"
                 borderRadius="8px"
                 cursor="pointer"
@@ -58,8 +58,7 @@ const Location = () => {
               gap={2}
               fontSize={["md", "2xl"]}
               color="teal.600"
-              justifyContent={"center"}
-              
+              justifyContent={["center", "flex-start"]}
             >
               <img
                 width="24"
@@ -75,7 +74,7 @@ const Location = () => {
               fontSize={["md", "2xl"]}
               color="teal.600"
               mb={6}
-              justifyContent={"center"}
+              justifyContent={["center", "flex-start"]}
             >
               <img
                 width="24"
@@ -85,7 +84,7 @@ const Location = () => {
               />
               (31) 3047-8448
             </Flex>
-   
+
             <Button
               colorScheme="teal"
               size="lg"

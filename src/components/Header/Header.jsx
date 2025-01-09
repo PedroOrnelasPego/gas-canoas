@@ -70,7 +70,7 @@ const Header = () => {
             {/* Informações de contato */}
             <Flex
               direction="column"
-              align={["center", "flex-end"]} // Centralizado em telas pequenas, à direita em maiores
+              align={["center", "center", "center", "flex-end"]} // Centralizado em telas pequenas, à direita em maiores
               textAlign={["center", "right"]} // Texto alinhado à direita em telas maiores
               gap={4}
               mt={[8, 0]} // Margem superior em telas pequenas
