@@ -57,7 +57,7 @@ const Header = () => {
               p={[4, 6]}
               mb={[4, 20]}
               textAlign="center"
-              maxW="600px"
+              maxW="100%"
               mx="auto"
             >
               <Text textAlign="start" fontSize={["sm", "md"]}>
