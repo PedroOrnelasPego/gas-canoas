@@ -22,6 +22,9 @@ const Header = () => {
               alt="Entregador com botijão"
               maxW={["200px", "300px", "700px"]}
               mx="auto"
+              sx={{
+                filter: "drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5))",
+              }}
             />
           </Box>
 
