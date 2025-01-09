@@ -36,9 +36,8 @@ const About = () => {
               mb={6}
             />
             <Text
-              fontSize={["lg", "xl"]} // Tamanho maior para telas grandes
-              fontWeight="semibold"
-              color="teal.700"
+              fontSize={["lg", "lg"]} // Tamanho maior para telas grandes
+              color="teal.600"
               mb={4}
             >
               A CANOAS GAS foi criada com o intuito de levar até você e a sua
@@ -46,9 +45,8 @@ const About = () => {
               momentos da alimentação em família.
             </Text>
             <Text
-              fontSize={["lg", "xl"]}
-              fontWeight="semibold"
-              color="teal.700"
+              fontSize={["lg", "lg"]}
+              color="teal.600"
               mb={4}
             >
               O nosso objetivo é fornecer produtos e serviços de forma segura,
@@ -56,9 +54,8 @@ const About = () => {
               clientes.
             </Text>
             <Text
-              fontSize={["lg", "xl"]}
-              fontWeight="semibold"
-              color="teal.700"
+              fontSize={["lg", "lg"]}
+              color="teal.600"
               mb={4}
             >
               Com muito trabalho, comprometimento e eficiência, conquistamos a
@@ -66,9 +63,8 @@ const About = () => {
               facilidade em suas casas e negócios.
             </Text>
             <Text
-              fontSize={["lg", "xl"]}
-              fontWeight="semibold"
-              color="teal.700"
+              fontSize={["lg", "lg"]}
+              color="teal.600"
               mb={6}
             >
               Prezando pela maior comodidade dos nossos clientes, trabalhamos

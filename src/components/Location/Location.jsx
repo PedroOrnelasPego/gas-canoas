@@ -1,5 +1,15 @@
 import React from "react";
-import { Box, Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Img,
+  Text,
+} from "@chakra-ui/react";
+
+import maps from "../../assets/maps.png";
 
 const Location = () => {
   return (
@@ -16,32 +26,23 @@ const Location = () => {
           gap={[8, 12]} // Espaçamento entre o mapa e as informações
           wrap="wrap"
         >
-          {/* Mapa */}
-          <Box flex="1" textAlign="center" width="100%">
-            <Box
-              width="100%"
-              maxW="600px"
-              height="0"
-              paddingBottom="56.25%" // Proporção 16:9
-              position="relative"
-              mx="auto"
+          {/* Mapa como Imagem Responsiva */}
+          <Box flex="1" textAlign="center">
+            <a
+              href="https://www.google.com/maps/place/SUPERGASBRAS/@-19.9626167,-43.9867167,847m/data=!3m2!1e3!4b1!4m6!3m5!1s0xa6962e0adfb379:0x9dbf9882e84ef01!8m2!3d-19.9626167!4d-43.9867167!16s%2Fg%2F11wpnt6k10?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.0927357086343!2d-43.9865623!3d-19.9626019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697076f891b55%3A0xb8fd5fdbde7f9352!2sCanoas%20G%C3%A1s%20e%20%C3%81gua%20Mineral!5e0!3m2!1spt-BR!2sbr!4v1736359857781!5m2!1spt-BR!2sbr"
-                style={{
-                  border: "0",
-                  borderRadius: "8px",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </Box>
+              <Img
+                src={maps} // Substitua por uma imagem gerada do mapa
+                alt="Localização no Google Maps"
+                width={["340px", "600px"]}
+                maxW="600px"
+                borderRadius="8px"
+                cursor="pointer"
+                mx="auto"
+              />
+            </a>
           </Box>
 
           {/* Informações de Contato */}
@@ -52,15 +53,39 @@ const Location = () => {
             <Text fontSize="md" color="teal.600" mb={4}>
               <strong>Central de atendimento</strong>
             </Text>
-            <Text fontSize="md" color="teal.600" mb={2}>
-              📞 (31) 98255-7807
-            </Text>
-            <Text fontSize="md" color="teal.600" mb={4}>
-              📞 (31) 3047-8448
-            </Text>
-            <Text fontSize="md" color="teal.600" mb={6}>
-              Peça pelo WhatsApp <br /> Pedir agora
-            </Text>
+            <Flex
+              align="center"
+              gap={2}
+              fontSize={["md", "2xl"]}
+              color="teal.600"
+              justifyContent={"center"}
+              
+            >
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/color/48/whatsapp--v5.png"
+                alt="whatsapp--v5"
+              />
+              (31) 98255-7807
+            </Flex>
+            <Flex
+              align="center"
+              gap={2}
+              fontSize={["md", "2xl"]}
+              color="teal.600"
+              mb={6}
+              justifyContent={"center"}
+            >
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-rounded/24/phone--v1.png"
+                alt="phone--v1"
+              />
+              (31) 3047-8448
+            </Flex>
+   
             <Button
               colorScheme="teal"
               size="lg"

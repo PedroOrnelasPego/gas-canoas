@@ -23,7 +23,7 @@ const Products = () => {
         wrap="wrap" // Permite quebra de linha
       >
         {/* Produto 1 */}
-        <Box flex="1" textAlign="center">
+        <Box flex="1" textAlign="start">
           <Image
             src={p13} // Caminho da imagem do produto
             alt="Gás P13"
@@ -45,7 +45,7 @@ const Products = () => {
         </Box>
 
         {/* Produto 2 */}
-        <Box flex="1" textAlign="center">
+        <Box flex="1" textAlign="start">
           <Image
             src={p20} // Caminho da imagem do produto
             alt="Gás P20"
@@ -69,7 +69,7 @@ const Products = () => {
         </Box>
 
         {/* Produto 3 */}
-        <Box flex="1" textAlign="center">
+        <Box flex="1" textAlign="start">
           <Image
             src={p45} // Caminho da imagem do produto
             alt="Gás P45"

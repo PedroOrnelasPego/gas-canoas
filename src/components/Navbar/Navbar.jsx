@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   useDisclosure,
@@ -11,44 +10,96 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Link } from "react-scroll";
+import canoasgas from "../../assets/canoasgas.png";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box px={4}>
+    <Box px={4} position="sticky" top="0" bg="white" zIndex="1000" shadow="md">
       <Flex
         h={16}
         alignItems="center"
         justifyContent="space-between"
         maxW="1200px"
         mx="auto"
-        
       >
         {/* Logo */}
         <HStack spacing={8} alignItems="center">
           <Box>
-            <Image
-              src="../src/assets/canoasgas.png" // Substitua pelo caminho do logo
-              alt="Canoas Gás Logo"
-              maxW="160px"
-            />
+            <Link
+              to="header"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+            >
+              <Image
+                src={canoasgas}
+                alt="Canoas Gás Logo"
+                maxW={['160px','180px']}
+                cursor="pointer"
+              />
+            </Link>
           </Box>
         </HStack>
 
         {/* Menu para telas grandes */}
         <HStack
           as="nav"
-          spacing={4}
-          display={{ base: "none", md: "flex" }} // Esconde em telas pequenas
+          spacing={10}
+          display={{ base: "none", md: "flex" }}
         >
-          <Link href="#about" color="black" fontWeight="semibold">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active"
+          >
             Sobre
           </Link>
-          <Link href="#services" color="black" fontWeight="semibold">
+          <Link
+            to="features"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active"
+          >
             Serviços
           </Link>
-          <Link href="#contact" color="black" fontWeight="semibold">
+          <Link
+            to="products"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active"
+          >
+            Produtos
+          </Link>
+          <Link
+            to="location"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active"
+          >
+            Localização
+          </Link>
+          <Link
+            to="footer"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            activeClass="active"
+          >
             Contato
           </Link>
         </HStack>
@@ -74,16 +125,73 @@ const Navbar = () => {
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
           <Stack as="nav" spacing={4}>
-            <Link href="#about" color="black" fontWeight="semibold">
+            <Link
+              to="header"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
+              Início
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
               Sobre
             </Link>
-            <Link href="#services" color="black" fontWeight="semibold">
+            <Link
+              to="features"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
               Serviços
             </Link>
-            <Link href="#contact" color="black" fontWeight="semibold">
+            <Link
+              to="products"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
+              Produtos
+            </Link>
+            <Link
+              to="location"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
+              Localização
+            </Link>
+            <Link
+              to="footer"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              spy={true}
+              activeClass="active"
+              onClick={onClose}
+            >
               Contato
             </Link>
-            <Button colorScheme="teal"   size="sm">
+            <Button colorScheme="teal" size="sm">
               Pedir Gás
             </Button>
           </Stack>
